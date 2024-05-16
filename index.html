@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               
+               <img class="logo-pg" src="./assets/fg.svg" alt="logo">
+                <ion-icon class="icon-search-hide" name="search-outline"></ion-icon> 
+            </div>
+            
+            <div class="bar">
+                <div class="wrapper">
+                    <ion-icon class="icon-search" name="search-outline"></ion-icon>
+                    <input type="text" placeholder="Pesquisar imagens no Photo Gallery">
+                </div>
+                
+                <button>
+                    <p>Todas as imagens</p>
+                    <ion-icon class="icon-down" name="chevron-down-outline"></ion-icon>
+                </button>
+            </div>
+            <ul>
+                <li class="explorer hide">
+                    Explorar
+                    <ion-icon class="icon-down" name="chevron-down-outline"></ion-icon>
+                </li>
+                <li>Efetuar login</li>
+                <li>Aderir</li>
+                <li class="load hide">Carregar
+                    <ion-icon name="download-outline"></ion-icon>
+                </li>
+                <ion-icon class="menu" name="menu-outline"></ion-icon>
+            </ul>
+        </nav>
+       <div class="title">
+            <h1>Imagens variadas para você explorar </h1>
+            <p>Várias imagens, fotos em alta qualidade para você e seus projetos.</p>
+       </div>
+        
+        <div class="search">
+            <div class="wrapper">
+                <ion-icon class="icon-search" name="search-outline"></ion-icon>
+                <input type="text" placeholder="Pesquisar imagens">
+            </div>
+            
+            <button>
+                <p>Todas as imagens</p>
+                <ion-icon class="icon-down" name="chevron-down-outline"></ion-icon>
+            </button>
+        </div>
+        
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li class="select"><ion-icon class="icon-home " name="home"></ion-icon>Inicío</li>
+                <li><ion-icon name="camera"></ion-icon>Fotos</li>
+                <li><ion-icon name="brush"></ion-icon>Ilustrações</li>
+                <li><ion-icon name="bookmark"></ion-icon>Favoritos</li>
+                <li><ion-icon name="heart-circle"></ion-icon>Gostei</li>
+            </ul>
+            
+            <div class="options">
+                <div class="tags">
+                    <p>flores</p>
+                    <p>praia</p>
+                    <p>gatos</p>
+                    <p>jesus</p>
+                    <p>casa</p>
+                    <p>carros</p>
+                    
+                </div>
+                <div class="settings">
+                    <ion-icon class="icon-settings" name="settings"></ion-icon>
+                   <button>Escolha do Editor <ion-icon name="chevron-down-outline"></ion-icon></button> 
+                </div>
+            </div>
+            
+            
+        </section>
+        
+        <article>
+            <figure>
+                <img src="https://source.unsplash.com/random?a=1" alt="">
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/random?a=2" alt="">
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/random?a=3" alt="">
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/random?a=4" alt="">
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/random?a=5" alt="">
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/random?a=6" alt="">
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/random?a=7" alt="">
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/random?a=8" alt="">
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <img src="./assets/Photo-Gallery-dark.svg" alt="">
+        <p>Várias imagens, fotos em alta qualidade para você.</p>
+        <div id="social-links">
+            <a href="https://github.com/ivanrods" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://instagram.com/ivanrods_" target="_blank">
+                 <ion-icon name="logo-instagram"></ion-icon>  
+            </a>
+            <a href="https://www.youtube.com/channel/UCxazfPt7uzM05nJm93yJSog" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/ivanrods/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
