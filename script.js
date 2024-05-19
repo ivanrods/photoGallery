@@ -1,8 +1,8 @@
 const navbar = document.querySelector("nav")
 const search = document.querySelector(".bar")
 const iconSearch = document.querySelector(".icon-search-hide")
-let img = document.querySelector(".logo .logo-pg")
-console.log(img)
+let pg = document.querySelector(".logo .logo-pg")
+let photo = document.querySelector(".logo-photo")
 
 search.style.display = 'none'
 iconSearch.style.display = 'none'
@@ -13,12 +13,14 @@ document.addEventListener("scroll", function() {
     navbar.classList.add('navScroll')
     search.style.display = ''
     iconSearch.style.display = ''
-    img.src = "./assets/fg-dark.svg"
+    pg.src = "./assets/fg-dark.svg"
+    photo.src = "./assets/Photo-Gallery-dark.svg"
     
   }else{
     navbar.classList.remove('navScroll')
     search.style.display = 'none'
     iconSearch.style.display = 'none'
-    img.src = "./assets/fg.svg"
+    pg.src = "./assets/fg.svg"
+    photo.src = "./assets/Photo-Gallery.svg"
   }
 });

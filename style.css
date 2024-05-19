@@ -29,6 +29,7 @@ header{
     background-image: url(./assets/img-header.jpg) ;
     background-size: cover;
     background-position: center;  
+   
 }
 header nav{
     width: 100%;
@@ -39,15 +40,23 @@ header nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem ;
+    z-index: 1;
 }
 .logo{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.logo img{
+.logo-pg{
     width: 4rem;
     height: 4rem;
+   
+}
+.logo-photo{
+    width: 16rem;
+    height: 1.6rem;
+    margin: 0 1rem;
+    display: none;
 }
 .icon-search-hide{
     font-size: 1.7rem;
@@ -196,6 +205,7 @@ button p{
 main{
     margin: auto;
     overflow-y: scroll;
+    
 }
 .options{
     width: 90%;
@@ -303,11 +313,12 @@ footer{
 
 }
 footer img{
-    width: 17rem;
+    width: 20rem;
     margin: 5rem;
 }
 footer p{
     font-size: 1.4rem;
+    margin: 1rem;
 }
 footer ul{
     display: flex;
@@ -341,7 +352,12 @@ footer ul{
     header{
         height: 45rem;
     }
-    
+    .logo-pg{
+        display: none;
+    }
+    .logo-photo{
+        display: block;
+    }
     .bar{
         display: flex;
     }
