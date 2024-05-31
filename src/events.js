@@ -1,4 +1,4 @@
-import { navbar, search, iconSearch, pg, photo } from "./elements.js"
+import { navbar, search, iconSearch, pg, photo ,aderir, modal, closeModal } from "./elements.js"
 
 //evento navbar
 export const scroll = document.addEventListener("scroll", function() {
@@ -20,3 +20,10 @@ export const scroll = document.addEventListener("scroll", function() {
 });
 
 
+aderir.addEventListener('click', ()=>{
+  modal.classList.remove('hide2')
+ 
+})
+closeModal.addEventListener('click', ()=> {
+  modal.classList.add('hide2')
+})

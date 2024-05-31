@@ -13,6 +13,11 @@
 .hide{
     display: none;
 }
+.hide2{
+    opacity: 0;
+    visibility: hidden;
+   
+}
 html, body, input{
     font-family: "Open Sans", sans-serif;
 
@@ -20,6 +25,118 @@ html, body, input{
 /* nav */
 
 }
+.modal-wrapper{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: grid;
+    place-content: center;
+  
+    
+}
+.close{
+    position: absolute;
+    color: var(--color-base-whith);
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    
+}
+/*modal*/
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-base-whith);
+    max-width: 44rem;
+    height: 100vh;
+    z-index: 1;
+    
+    
+}
+.modal h1{
+    background-color: black;
+    text-align: center;
+    color: var(--color-base-whith);
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+.modal ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.modal ul li{
+    list-style: none;
+    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-base-gray);
+}
+.modal .social{
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.modal .social button{
+    background-color: var(--color-base-whith);
+    border: none;
+    width: 100%;
+    justify-self: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-base-gray);
+}
+.button-social{
+    display: flex;
+    align-items: center;
+    width: 90%;
+   height: 4rem;
+   background: var(--color-base-whith);
+   border: 1px solid var(--color-base-gray);
+   border-radius: 2rem;
+   padding: .5rem;
+}
+.button-social img{
+    width: 2.4rem;
+}
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+form input{
+    
+    width: 100%;
+    height: 4.5rem;
+    border: 1px solid var(--color-base-gray);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+form label{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 3rem;
+    color: var(--color-base-gray);
+}
+
+.add{
+    height: 4.5rem;
+    background-color: var(--color-base-green);
+    color: var(--color-base-whith);
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6rem;
+}
+
+
 header{
     width: 100%;
     height: 46rem;
