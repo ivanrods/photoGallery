@@ -9,6 +9,7 @@
     --color-base-gray: #636363;
     --color-gray-light: #f4f4f4;
     --color-base-green: #15b658;
+    --color-base-dark: #030712;
 }
 .hide{
     display: none;
@@ -18,6 +19,7 @@
     visibility: hidden;
    
 }
+
 html, body, input{
     font-family: "Open Sans", sans-serif;
 
@@ -25,13 +27,22 @@ html, body, input{
 /* nav */
 
 }
+.content{
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-base-dark);
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    
+}
 .modal-wrapper{
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
     display: grid;
     place-content: center;
-  
+    
     
 }
 .close{
@@ -43,12 +54,19 @@ html, body, input{
     
 }
 /*modal*/
+.mode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
 .modal{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     background-color: var(--color-base-whith);
+   
     max-width: 44rem;
     height: 100vh;
     z-index: 1;
@@ -125,7 +143,10 @@ form label{
     padding-top: 3rem;
     color: var(--color-base-gray);
 }
-
+.slider{
+    background-color: #636363;
+    
+}
 .add{
     height: 4.5rem;
     background-color: var(--color-base-green);
@@ -217,14 +238,37 @@ nav ul li{
     font-size: 1.5rem;
     font-weight: 600;
     list-style-type: none;   
+    cursor: pointer;
 }
 
-.load{
+.explorer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: var(--color-base-whith);
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    border: none;
+}
+.explorer button:active{
+    background-color: rgba(0, 0, 0, .1);
+}
+.load button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     background-color: var(--color-base-green);
-    width: 11rem;
-    padding: 1rem;
+    padding: 1rem 1rem;
     border-radius: 3rem;
     color: var(--color-base-whith);
+    border: none;
+    font-size: 1.4;
+    font-weight: bold;
 }
 header li:nth-child(3){
     background-color: rgba(0, 0, 0, .1);
@@ -329,6 +373,7 @@ section ul li{
     font-weight: bold;
     color: var(--color-base-gray); 
     gap: .5rem;
+    cursor: pointer;
 }
 
 .select{
@@ -376,6 +421,7 @@ section button{
   margin: 2rem 1rem;
   overflow-x: scroll;
   
+  
 }
 .tags::-webkit-scrollbar {
     display: none;
@@ -392,7 +438,8 @@ section ul::-webkit-scrollbar {
     font-size: 1.3rem;
     padding: .4rem 2rem;
     border: 1px solid var(--color-base-gray);
-    border-radius: 1rem;    
+    border-radius: 1rem;   
+    cursor: pointer;
 }
 /*article*/
 article{
@@ -412,6 +459,7 @@ main button{
     border: 1px solid var(--color-base-gray);
     padding: 1rem 2rem;
     border-radius: 3rem;
+    cursor: pointer;
 }
 /*footer*/
 
@@ -457,6 +505,29 @@ footer ul{
     .hide{
         display: block;
     }
+    .modal{
+        height: 90%;
+        
+    }
+    .mode{
+      
+        overflow-y: auto;
+        width: 100%;
+        padding: 0rem 0rem 2rem 0rem;
+        
+    }
+    .mode::-webkit-scrollbar {
+        background-color: var(--color-base-whith);
+       width: .5rem;
+        
+      }
+      
+    .mode::-webkit-scrollbar-thumb{
+       
+        background-color: grey;
+        border-radius: 5px;
+       
+      }
     /*header*/
     header{
         height: 45rem;

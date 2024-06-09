@@ -14,10 +14,11 @@
     <header>
         <nav>
             <div class="logo">
-               
+              
                <img class="logo-pg" src="./assets/fg.svg" alt="logo">
                <img class="logo-photo" src="./assets/Photo-Gallery.svg" alt="">
-                <ion-icon class="icon-search-hide" name="search-outline"></ion-icon> 
+                <ion-icon class="icon-search-hide" name="search-outline"></ion-icon>
+                
             </div>
             
             <div class="bar">
@@ -33,13 +34,19 @@
             </div>
             <ul>
                 <li class="explorer hide">
-                    Explorar
-                    <ion-icon class="icon-down" name="chevron-down-outline"></ion-icon>
+                    <button> Explorar
+                     <ion-icon class="icon-down" name="chevron-down-outline"></ion-icon>   
+                    </button>
+ 
                 </li>
-                <li>Efetuar login</li>
+                <li class="login">Efetuar login</li>
                 <li class="aderir">Aderir</li>
-                <li class="load hide">Carregar
-                    <ion-icon name="download-outline"></ion-icon>
+                <li class="load hide">
+                    <button>
+                       <ion-icon name="download-outline"></ion-icon>
+                        Carregar  
+                    </button>
+                       
                 </li>
                 <ion-icon class="menu" name="menu-outline"></ion-icon>
             </ul>
@@ -66,42 +73,49 @@
         <div class="modal">
             <ion-icon name="close-outline" class="close"></ion-icon>
             <h1>Cadastre-se para ver imagens ilimitada em resolução total</h1> 
-            <ul>
-                <li>Inscrição</li>
-                <li>Efetuar login</li>
-            </ul>
-            <div class="social">
-                <div class="button-social">
-                    <img src="/assets/logo-google.svg" alt="">
-                    <button>Continuar com o Google</button>
+
+            <div class="mode">
+                <ul>
+                    <li>Inscrição</li>
+                    <li>Efetuar login</li>
+                </ul>
+                <div class="social">
+                    <div class="button-social">
+                        <img src="/assets/logo-google.svg" alt="">
+                        <button>Continuar com o Google</button>
+                    </div>
+                    <div class="button-social">
+                        <img src="/assets/logo-face.svg" alt="">
+                        <button>Continuar com o Facebook</button>
+                    </div>
+                    
                 </div>
-                <div class="button-social">
-                    <img src="/assets/logo-face.svg" alt="">
-                    <button>Continuar com o Facebook</button>
-                </div>
-                
-            </div>
-        
             
-            <p>ou</p>
-            <form action="">
-                <label for="nome">* Nome do usuário</label>
-                <input type="text" name="nome" id="" placeholder="e.g.maria93">
-
-                <label for="email">* Email</label>
-                <input type="email" name="email" id="" placeholder="exemple@email.com">
                 
-                <label for="senha">* Senha</label>
-                <input type="password" name="senha" id="">
-
-                <input type="range" name="" id="">
-                <label for="">* pelo menos 8 caracteres, incluindo um número</label>
-
-                <input type="submit" value="Aderir" class="add">
-                
-            </form>
+                <p>ou</p>
+                <form action="">
+                    <label for="nome">* Nome do usuário</label>
+                    <input type="text" name="nome" id="" placeholder="e.g.maria93">
+    
+                    <label for="email">* Email</label>
+                    <input type="email" name="email" id="" placeholder="exemple@email.com">
+                    
+                    <label for="senha">* Senha</label>
+                    <input type="password" name="senha" id="">
+    
+                    <input class="slider" type="range" name="" id="">
+                    <label for="">* pelo menos 8 caracteres, incluindo um número</label>
+    
+                    <input type="submit" value="Aderir" class="add">
+                    
+                </form>
+            </div>
+           
         </div>
        
+    </div>
+    <div class="content hide2">
+        <ion-icon name="close-outline" class="close"></ion-icon>
     </div>
     <main>
         <section>
